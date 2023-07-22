@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>janken-web-application</title>
+        <style>
+                body {
+                        background-color: #f7eef9;
+                        font-family: 'Arial', sans-serif;
+                        text-align: center;
+                        margin:0;
+                        padding:0;
+                }
+                h1 {
+                        color:#6d2177;
+                        font-size:32px;
+                        margin-top:40px;
+                }
+
+        </style>
+</head>
+<body>
+        <h1>Welcom to b2212580</h1>
+        <FORM METHOD=POST ACTION="http://3.91.159.150/v1">
+                <INPUT TYPE=text NAME=key>
+                <INPUT TYPE=submit>
+        </FORM>
+        <h1>Janken form {}</h1>
+        <h1>Upload file</h1>
+        <FORM METHOD="post" ENCTYPE="multipart/form-data" ACTION="http://3.91.159.150/api/upload">
+                <INPUT TYPE="file" name="file">
+                <INPUT TYPE="submit">
+        </FORM>
+        <h1>Text Rekogniton</h1>
+        <FORM METHOD="post" ENCTYPE="multipart/form-data" ACTION="http://54.167.123.209/api/text">
+                <INPUT TYPE="file" name="file">
+                <INPUT TYPE="submit">
+        </FORM>
+</body>
+</html>
